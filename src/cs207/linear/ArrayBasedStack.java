@@ -7,7 +7,8 @@ import java.util.NoSuchElementException;
  * A simple array-based stack.
  *
  * @author Samuel A. Rebelsky
- * @author Your Name Here
+ * @author Arsal Shaikh
+ * @author Pranav Bhandari
  */
 public class ArrayBasedStack<T> implements Stack<T> {
   // +--------+----------------------------------------------------------
@@ -64,6 +65,7 @@ public class ArrayBasedStack<T> implements Stack<T> {
     if (this.isFull()) {
       throw new Exception("full");
     } // if full
+    this.values[this.size] = val; // was missing
     this.size++;
   } // put(T)
 
@@ -72,7 +74,7 @@ public class ArrayBasedStack<T> implements Stack<T> {
     if (this.isEmpty()) {
       throw new Exception("empty");
     } // if empty
-    return values[--size];
+    return values[--this.size]; // was just "size"
   } // get()
 
   @Override

@@ -7,7 +7,8 @@ import java.util.Iterator;
  * Experiments with LinearStructures.
  *
  * @author Samuel A. Rebelsky
- * @author Your Name Here
+ * @author Arsal Shaikh
+ * @author Pranav Bhandari
  */
 public class LinearStructureExpt {
   // +----------------+--------------------------------------------------
