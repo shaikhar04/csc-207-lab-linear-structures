@@ -55,23 +55,17 @@ public class StringUtils {
             } else {
                 System.err.println("Closed Bracket is mismatched - 2");
                 return false;
-            }
-        }
-        // Check if closed bracket
-            // if stack empty then error
-            // check with peak 
-                // if matches then pop from stack then continue
-                // not match => throw error
+            } // if/else
+        } // if
     }
 
     // if array not empty then throw error
     if (parens.isEmpty()) {
         return true;
-    }
+    } // if
     
     System.err.println("Open Bracket is mismatched");
     return false;
-    // STUB
   } // checkMatching
 
   // +-------------+-------------------------------------------------
